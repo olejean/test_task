@@ -49,7 +49,7 @@ ___3. Настройка сборки логов.___
 ## Решение 
 #### Разворачиваем инфрастуктуру как код (iaC) через Terraform в Yandex Cloud
 
-- Разворациваем  три инстанса.  Два сервера в одном кластере Kubernetes: 1 master (Managed Service for Kubernetes) и одна нода (Node) app 
+- Разворачиваем  три инстанса.  Два сервера в одном кластере Kubernetes: 1 master (Managed Service for Kubernetes) и одна нода (Node) app 
 -  Сервер srv для инструментов мониторинга, логгирования и сборок контейнеров.
 #### installation
 Основной файл [README.md](https://github.com/olejean/devops-diplom/blob/main/README.md)   находится в этом Репозиторий.
@@ -64,7 +64,7 @@ terraform apply  -var-file=secret.tfvars
 ```
 
 Устанавливаем Ansible  на сервер srv, что бы с него можно было автоматизировать установку приложений. переходим а папку ansible  и запускаем.
-___Устанавливаем прриложения необходимы для работы___
+___Устанавливаем приложения необходимые для работы___
 - Kubectl
 - Helm
 - Prometheus
