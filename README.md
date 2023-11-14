@@ -53,7 +53,7 @@ ___3. Настройка сборки логов.___
 -  Сервер srv для инструментов мониторинга, логгирования и сборок контейнеров.
 #### installation
 Основной файл [README.md](https://github.com/olejean/devops-diplom/blob/main/README.md)   находится в этом Репозиторий.
-Скачиваем репозиторий  https://github.com/olejean/devops-diplom.git Переходим в папку terraform и запускаем terraform apply  -var-file=secret.tfvars
+Клонируем репозиторий  https://github.com/olejean/devops-diplom.git Переходим в папку terraform и запускаем terraform apply  -var-file=secret.tfvars
 Все секретные данные находится в отдельно файле и в git  не попали. Готово наша инфрастуктура развернута.
 
 
