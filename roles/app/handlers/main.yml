@@ -1,0 +1,8 @@
+---
+# Пересчитаем конфиг после изменения конфигурационного файла, зачем рестартовать если можно пересчитать.
+
+- name: restart nginx
+  command: docker compose exec nginx nginx -s reload
+  args:
+    chdir: /opt/myapp
+

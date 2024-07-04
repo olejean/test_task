@@ -1,5 +1,2 @@
 **/.*
-**/secrets.*
-**/terraform.*
-terraform/secret.tfvars
-
+ansible.cfg

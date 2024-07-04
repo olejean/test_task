@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  become: yes
+  roles:
+    - role: common
+    - role: docker
+    - role: app
+

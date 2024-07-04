@@ -1,0 +1,25 @@
+---
+# Устанавливаем Docker  и Docker compose
+
+- name: add GPG key
+  apt_key:
+    url: https://download.docker.com/linux/ubuntu/gpg
+    state: present
+
+- name: add docker repository to apt
+  apt_repository:
+    repo: deb https://download.docker.com/linux/ubuntu bionic stable
+    state: present
+
+
+- name: Add Docker Repository
+  apt_repository:                           # модуль для добавления репозитория builtin.apt_repository
+    repo: deb https://download.docker.com/linux/ubuntu focal stable
+    state: present
+
+- name: Update apt and install docker-ce    # Установка самого Docker
+  apt:
+    name: docker-ce
+    state: latest
+    update_cache: true
+

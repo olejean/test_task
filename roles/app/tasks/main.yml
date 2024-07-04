@@ -1,0 +1,44 @@
+---
+- name: Create application directory
+  file:
+    path: /opt/myapp
+    state: directory
+
+- name: Create application directory nginx
+  file:
+    path: /opt/myapp/nginx
+    state: directory
+      
+
+- name: Copy application files
+  copy:
+    src: app/
+    dest: /opt/myapp/app/
+
+- name: Copy environment file
+  copy:
+    src: .env
+    dest: /opt/myapp/.env
+
+- name: Copy docker-compose file
+  copy:
+    src: docker-compose.yml
+    dest: /opt/myapp/docker-compose.yml
+
+- name: Generate PHP Dockerfile
+  template:
+    src: Dockerfile-php.j2
+    dest: /opt/myapp/Dockerfile
+
+- name: Generate nginx configuration file
+  template:
+    src: nginx.conf.j2
+    dest: /opt/myapp/nginx/nginx.conf
+  notify: restart nginx
+
+
+- name: Build and start Docker containers
+  command: docker compose up -d
+  args:
+    chdir: /opt/myapp
+
