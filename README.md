@@ -22,8 +22,14 @@
 2. docker-compose.yml;
 3. Dockerfile;
 
+![Mysql](https://github.com/olejean/test_task/blob/985f3c5fe5acdaf1fd47c2c619f2c2705fd98eb6/bd.PNG)
+![alt text](https://github.com/[username![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+![alt text](https://github.com/[olejean]/[test_task]/blob/[branch]/bd.png?raw=true)
 
 ***
+
+
 ## Решение
 
 ```sh
