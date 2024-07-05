@@ -21,7 +21,13 @@
 3. Dockerfile;
 
 ![Mysql](bd.png)
+![alt text](https://github.com/[username![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)]/[reponame]/blob/[branch]/image.jpg?raw=true)
+
+![alt text](https://github.com/[olejean]/[test_task]/blob/[branch]/bd.png?raw=true)
+
 ***
+
+
 ## Решение
 Из задания, я так понял, что нужно сделать докеризированное веб приложение (nginx, php, mysql) -- тоесть в одном докер контейнере, хоть это конечно не правльно, потому что нужно стремиться к: один контейнер один процесс. Возможно я что-то не правильно понял, но я так понимаю вы оцениваете всетаки мои знания, поэтому издагаю мысли.
 Порты в контейнере заменены на 8080  так как запускать контейнеры с портами меньше 1024   НЕ  безопасно. HTTPS ssl  делать не стал, так как в задании это не указано.
