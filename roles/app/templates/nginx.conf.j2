@@ -13,7 +13,7 @@ http {
 
     server {
         listen 8080;
-        server_name {{ ansible_fqdn }};
+        server_name {{ server_name }};
 
         root {{ nginx_root }};
         index index.php index.html;

@@ -7,3 +7,4 @@
     - role: app
   vars:
     nginx_root: "/var/www/html"
+    server_name: "test.olejean.ru"  
