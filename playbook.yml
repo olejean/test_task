@@ -5,4 +5,5 @@
     - role: common
     - role: docker
     - role: app
-
+  vars:
+    nginx_root: "/var/www/html"
